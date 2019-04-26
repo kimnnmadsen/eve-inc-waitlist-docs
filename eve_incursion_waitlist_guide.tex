@@ -8,6 +8,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{xcolor}
 \usepackage{xspace}
+\usepackage{listings}
 \hypersetup{
 	colorlinks,
 	linkcolor={red!50!black},
@@ -210,5 +211,9 @@ This way there could be rules for e.g. Blaster with a modifier of 1.00 and a rul
 And in the end it would get assigned the Tag and Waitlist of the Remote Shield Booster rule.
 
 If the value is not at least 4.00 the result is treated as if the rules would not have matched.
+
+\subsubsection{Rule Generator Scrip}
+There is a script \lstinline|setup_shipclassifications.py| bundled with the waitlist that allowes for generating some rules you can start from.
+This script assumes the \lstinline|setup_waitlists.py| was used to setup default waitlists.
 
 \end{document}
